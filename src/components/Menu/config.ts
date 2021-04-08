@@ -1,10 +1,13 @@
 import { MenuEntry } from '@pancakeswap-libs/uikit'
 
+
+const homepage = "https://demeterfi.com/"
+
 const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://pancakeswap.finance/',
+    href: `${homepage}`,
   },
   {
     label: 'Trade',
@@ -24,89 +27,37 @@ const config: MenuEntry[] = [
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: 'https://pancakeswap.finance/farms',
+    href: `${homepage}farms`,
   },
   {
-    label: 'Pools',
+    label: 'Silos',
     icon: 'PoolIcon',
-    href: 'https://pancakeswap.finance/syrup',
-  },
-  {
-    label: 'Lottery',
-    icon: 'TicketIcon',
-    href: 'https://pancakeswap.finance/lottery',
-  },
-  {
-    label: 'NFT',
-    icon: 'NftIcon',
-    href: 'https://pancakeswap.finance/nft',
-  },
-  {
-    label: 'Teams & Profile',
-    icon: 'GroupsIcon',
-    calloutClass: 'rainbow',
-    items: [
-      {
-        label: 'Leaderboard',
-        href: 'https://pancakeswap.finance/teams',
-      },
-      {
-        label: 'Task Center',
-        href: 'https://pancakeswap.finance/profile/tasks',
-      },
-      {
-        label: 'Your Profile',
-        href: 'https://pancakeswap.finance/profile',
-      },
-    ],
-  },
-  {
-    label: 'Info',
-    icon: 'InfoIcon',
-    items: [
-      {
-        label: 'Overview',
-        href: 'https://pancakeswap.info',
-      },
-      {
-        label: 'Tokens',
-        href: 'https://pancakeswap.info/tokens',
-      },
-      {
-        label: 'Pairs',
-        href: 'https://pancakeswap.info/pairs',
-      },
-      {
-        label: 'Accounts',
-        href: 'https://pancakeswap.info/accounts',
-      },
-    ],
-  },
-  {
-    label: 'IFO',
-    icon: 'IfoIcon',
-    href: 'https://pancakeswap.finance/ifo',
+    href: `${homepage}silos`,
   },
   {
     label: 'More',
     icon: 'MoreIcon',
     items: [
       {
-        label: 'Voting',
-        href: 'https://voting.pancakeswap.finance',
-      },
-      {
         label: 'Github',
-        href: 'https://github.com/pancakeswap',
+        href: 'https://github.com/demeter-finance/',
+        newTab: true,
       },
       {
         label: 'Docs',
-        href: 'https://docs.pancakeswap.finance',
+        href: 'https://docs.demeterfi.com',
+        newTab: true,
       },
       {
-        label: 'Blog',
-        href: 'https://pancakeswap.medium.com',
+        label: 'Medium',
+        href: 'https://medium.com/@DemeterFi',
+        newTab: true,
       },
+      // {
+      //   label: 'Publish0x',
+      //   href: 'https://www.publish0x.com/demeter-finance',
+      //   newTab: true,
+      // },
     ],
   },
 ]

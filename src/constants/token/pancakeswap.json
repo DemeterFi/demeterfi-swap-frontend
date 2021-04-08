@@ -19,6 +19,14 @@
       "logoURI": "/images/coins/BUSD.png"
     },
     {
+      "name": "DemeterFi Token",
+      "symbol": "DMTR",
+      "address": "0x82378845b58f0a1406C34Ecf754b75A36C2fE1Bb",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "/images/coins/dmtr.png"
+    },
+    {
       "name": "WBNB Token",
       "symbol": "WBNB",
       "address": "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c",

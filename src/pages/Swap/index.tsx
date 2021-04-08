@@ -259,7 +259,7 @@ const Swap = () => {
   return (
     <>
       <TokenWarningModal
-        isOpen={urlLoadedTokens.length > 0 && !dismissTokenWarning}
+        isOpen={urlLoadedTokens.length > 0 && !dismissTokenWarning && loadedOutputCurrency?.symbol !== "DMTR"}
         tokens={urlLoadedTokens}
         onConfirm={handleConfirmTokenWarning}
       />
