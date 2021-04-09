@@ -41,7 +41,7 @@ export const ErrorText = styled(Text)<{ severity?: 0 | 1 | 2 | 3 | 4 }>`
       ? theme.colors.binance
       : severity === 1
       ? theme.colors.text
-      : theme.colors.success};
+      : '#6C584C'};
 `
 
 export const StyledBalanceMaxMini = styled.button`

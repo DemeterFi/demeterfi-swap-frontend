@@ -16,7 +16,7 @@ const PriceInfoText = styled(Text)`
   line-height: 1.3;
 
   span {
-    color: ${({ theme }) => theme.colors.primary};
+    color: #6C584C;
     font-weight: 600;
   }
 `

@@ -2122,9 +2122,9 @@
     tiny-warning "^1.0.3"
     toformat "^2.0.0"
 
-"@pancakeswap-libs/uikit@crypto-peter-dev/demeter-uilib#d5988d3d65259":
+"@pancakeswap-libs/uikit@crypto-peter-dev/demeter-uilib#ea0dc369bd326a6":
   version "0.15.0"
-  resolved "https://codeload.github.com/crypto-peter-dev/demeter-uilib/tar.gz/d5988d3d652593bf52992a363e386153c78aa97a"
+  resolved "https://codeload.github.com/crypto-peter-dev/demeter-uilib/tar.gz/ea0dc369bd326a618de712f618430566ec668ea9"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
