@@ -5,9 +5,9 @@ import { allLanguages } from 'constants/localisation/languageCodes'
 import { LanguageContext } from 'hooks/LanguageContext'
 import useTheme from 'hooks/useTheme'
 import useGetPriceData from 'hooks/useGetPriceData'
-import useGetLocalProfile from 'hooks/useGetLocalProfile'
+// import useGetLocalProfile from 'hooks/useGetLocalProfile'
 import useAuth from 'hooks/useAuth'
-import links from './config'
+import links, { configCNLang } from './config'
 
 const Menu: React.FC = (props) => {
   const { account } = useWeb3React()
@@ -16,11 +16,11 @@ const Menu: React.FC = (props) => {
   const { isDark, toggleTheme } = useTheme()
   const priceData = useGetPriceData()
   const cakePriceUsd = priceData ? Number(priceData.prices.DMTR) : undefined
-  const profile = useGetLocalProfile()
-
+  // const profile = useGetLocalProfile()
+  const configLinks = selectedLanguage?.code === "zh-CN" ? configCNLang : links
   return (
     <UikitMenu
-      links={links}
+      links={configLinks}
       account={account as string}
       login={login}
       logout={logout}
@@ -30,7 +30,7 @@ const Menu: React.FC = (props) => {
       langs={allLanguages}
       setLang={setSelectedLanguage}
       cakePriceUsd={cakePriceUsd}
-      profile={profile}
+      // profile={profile}
       {...props}
     />
   )

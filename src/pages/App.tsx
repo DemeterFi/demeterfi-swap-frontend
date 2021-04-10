@@ -90,20 +90,24 @@ export default function App() {
   }, [])
 
   const fetchTranslationsForSelectedLanguage = async () => {
-    stringTranslationsApi
-      .listLanguageTranslations(projectId, selectedLanguage.code, undefined, fileId, 200)
-      .then((translationApiResponse) => {
-        if (translationApiResponse.data.length < 1) {
-          setTranslations(['error'])
-        } else {
-          setTranslations(translationApiResponse.data)
-        }
-      })
-      .then(() => setTranslatedLanguage(selectedLanguage))
-      .catch((error) => {
-        setTranslations(['error'])
-        console.error(error)
-      })
+    fetch(`/translate/${selectedLanguage.code}.json`)
+      .then(e => e.json())
+      .then(data => setTranslations(data.data))
+      .catch(e => setTranslations(['error']))
+    // stringTranslationsApi
+    //   .listLanguageTranslations(projectId, selectedLanguage.code, undefined, fileId, 200)
+    //   .then((translationApiResponse) => {
+    //     if (translationApiResponse.data.length < 1) {
+    //       setTranslations(['error'])
+    //     } else {
+    //       setTranslations(translationApiResponse.data)
+    //     }
+    //   })
+    //   .then(() => setTranslatedLanguage(selectedLanguage))
+    //   .catch((error) => {
+    //     setTranslations(['error'])
+    //     console.error(error)
+    //   })
   }
 
   useEffect(() => {
